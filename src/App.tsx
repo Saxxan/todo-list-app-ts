@@ -80,7 +80,7 @@ const App = (): JSX.Element => {
    */
   const handleAddTodo = (title: string): void => {
     const newTodo = {
-      id: ++todos.length,
+      id: (todos.length + 1),
       title,
       completed: false
     }
